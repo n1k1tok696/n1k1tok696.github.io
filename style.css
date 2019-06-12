@@ -1,0 +1,135 @@
+body {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Tahoma, Arial;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+}
+main {
+	width: 60%;
+	margin:0px auto;
+}
+
+/* People constantly confuse two universes. */
+
+.parrent {
+	position: relative;
+	box-sizing: border-box;
+	/* border: 1px solid black; */
+	
+	
+	min-height: 350px;
+}
+
+.box {
+	box-sizing: border-box;
+	position: absolute;
+	cursor: pointer;
+	margin-left: 50%;
+	left: -100px;
+	top: 70px;
+	border: 1px solid green;
+	width: 200px;
+	height: 200px;
+}
+
+.first {
+	background: url(img/facepalm.jpeg);
+	background-position:50% 50%;
+	background-size: 175%;
+	z-index: 5;
+	transition: transform .8s ease-in-out;
+}
+
+.first:hover {
+    transform: scale(0.5);
+}
+
+.second {
+	background: url(img/SW1.jpg);
+	transform: rotate(22deg);
+	z-index: 4;
+	border-color: red;
+}
+
+.second:hover {
+	transform: rotate(15deg);
+} 
+
+.third {
+	background: url(img/SW.jpg);
+	transform: rotate(44deg);
+	z-index: 3;
+	border-color: blue;
+}
+
+.third:hover {
+	transform: rotate(37deg);
+} 
+
+.forth {
+	background: url(img/SW.jpg);
+	transform: rotate(66deg);
+	z-index: 2;
+	border-color: black;
+}
+
+.forth:hover {
+	transform: rotate(59deg);
+} 
+
+.rotate {
+	background-position:50% 50%;
+	opacity:.55;
+	background-size: 175%;
+	transition: transform .8s ease-in-out;
+}
+
+/* Боковое меню */
+
+.left-menu {
+	position: fixed;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0px;
+	margin-top: 30px;
+}
+
+/* li::before {
+	content: ">"
+} */
+
+ul {
+	
+ 	display: block;
+	width: 50%;
+	height: 300px;
+	border: 1px solid black;
+	/* line-height: 40px; */
+	background: #bbb;
+}
+
+li {
+ 	/* display: block; */
+	/* width: 20%;
+	height: 40px;
+	border: 1px solid black;
+	line-height: 40px;
+	background: #bbb; */
+	color: #fff;
+	padding-left: 50px;
+	transition: all .2s ease-in-out; 
+}
+
+li a {
+	text-decoration: none;
+}
+
+li:hover {
+	background: red;
+}
