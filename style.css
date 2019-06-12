@@ -92,10 +92,16 @@ main {
 
 .left-menu {
 	position: fixed;
-}
+	width: 50%;
+/* 	transition: .5s; */
+} 
+
+/* .left-menu:hover {
+	transform: translateX(-100%);
+} */
 
 nav ul {
-	list-style: none;
+	list-style: circle;
 	padding: 0px;
 	margin-top: 30px;
 }
@@ -105,27 +111,42 @@ nav ul {
 } */
 
 ul {
+	width: 25px;
+	min-height: 300px;
+	border: 1px solid black;
+	line-height: 40px;
+	background: #bbb;
+	overflow: hidden;
+	transition: .5s ease-in-out;
+
+}
+
+ul:hover {
 	
  	display: block;
 	width: 50%;
-	height: 300px;
+	min-height: 300px;
 	border: 1px solid black;
-	/* line-height: 40px; */
+	line-height: 40px;
 	background: #bbb;
+	transition: .5s ease-in-out;
 }
 
 li {
- 	/* display: block; */
 	/* width: 20%;
 	height: 40px;
-	border: 1px solid black;
-	line-height: 40px;
-	background: #bbb; */
+	border: 1px solid black;*/
+	line-height: 30px;
+	/*background: #bbb; */
+	overflow: hidden;
 	color: #fff;
-	padding-left: 50px;
+	margin-left: 50px;
 	transition: all .2s ease-in-out; 
 }
 
+ul li:first-child {
+	margin-top: 20px;
+}
 li a {
 	text-decoration: none;
 }
